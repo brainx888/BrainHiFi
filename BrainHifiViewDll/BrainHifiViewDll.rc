@@ -1,0 +1,204 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "ResourceBhMsiViewer.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "ResourceBhMsiViewer.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BH_MSI_VIEWER DIALOGEX 0, 0, 761, 494
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BrainHifi - MRI + MEG Source Viewer (axial / coronal / sagittal)"
+MENU IDR_MENU_BRAINHIFIVIEW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Anatomical Data (3D Structure):",IDC_STATIC,7,9,103,8
+    EDITTEXT        IDC_BH_EDIT_MRI_PATH,132,7,436,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Load MRI CT...",IDC_BH_BTN_LOAD_MRI,575,4,67,14
+    LTEXT           "Functional Data (Volumetric Source)",IDC_STATIC,7,25,122,8
+    EDITTEXT        IDC_BH_EDIT_SRC_PATH,132,23,436,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Load MEG, EEG...",IDC_BH_BTN_LOAD_SRC,575,21,67,14
+    CONTROL         "",IDC_BH_PANE_AXIAL,"Static",SS_BLACKRECT | NOT WS_VISIBLE,7,42,244,240
+    CONTROL         "",IDC_BH_PANE_CORONAL,"Static",SS_BLACKRECT | NOT WS_VISIBLE,258,42,244,240
+    CONTROL         "",IDC_BH_PANE_SAGITTAL,"Static",SS_BLACKRECT | NOT WS_VISIBLE,509,42,244,240
+    CONTROL         "",IDC_BH_SLD_AXIAL,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,285,190,14
+    LTEXT           "",IDC_BH_TXT_AXIAL,199,288,52,8
+    CONTROL         "",IDC_BH_SLD_CORONAL,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,258,285,190,14
+    LTEXT           "",IDC_BH_TXT_CORONAL,450,288,52,8
+    CONTROL         "",IDC_BH_SLD_SAGITTAL,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,509,285,190,14
+    LTEXT           "",IDC_BH_TXT_SAGITTAL,701,288,52,8
+    GROUPBOX        "MEG source overlay",IDC_STATIC,7,303,495,89
+    CONTROL         "Show source",IDC_BH_CHK_SHOW_SRC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,316,60,10
+    CONTROL         "Show negative values",IDC_BH_CHK_NEGATIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,316,90,10
+    CONTROL         "Trilinear interpolation",IDC_BH_CHK_TRILINEAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,176,316,90,10
+    LTEXT           "Item:",IDC_STATIC,290,317,20,8
+    COMBOBOX        IDC_BH_CMB_ITEM,312,314,100,120,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Go to peak",IDC_BH_BTN_GOTO_PEAK,420,313,75,14
+    LTEXT           "Time slice:",IDC_STATIC,14,334,40,8
+    CONTROL         "",IDC_BH_SLD_TIME,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,56,331,356,14
+    LTEXT           "",IDC_BH_TXT_TIME,416,334,80,8
+    LTEXT           "Threshold:",IDC_STATIC,14,354,40,8
+    CONTROL         "",IDC_BH_SLD_THRESH,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,56,351,150,14
+    LTEXT           "",IDC_BH_TXT_THRESH,208,354,70,8
+    LTEXT           "Opacity:",IDC_STATIC,284,354,30,8
+    CONTROL         "",IDC_BH_SLD_OPACITY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,316,351,130,14
+    LTEXT           "",IDC_BH_TXT_OPACITY,448,354,48,8
+    GROUPBOX        "MRI display",IDC_STATIC,509,303,244,72
+    LTEXT           "Gray low:",IDC_STATIC,516,317,36,8
+    CONTROL         "",IDC_BH_SLD_GRAY_LOW,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,554,314,192,14
+    LTEXT           "Gray high:",IDC_STATIC,516,334,36,8
+    CONTROL         "",IDC_BH_SLD_GRAY_HIGH,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,554,331,192,14
+    LTEXT           "",IDC_BH_TXT_GRAY,516,348,230,8
+    CONTROL         "Crosshair",IDC_BH_CHK_CROSSHAIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,516,360,50,10
+    CONTROL         "Flip L/R (neurological)",IDC_BH_CHK_FLIP_LR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,570,360,92,10
+    PUSHBUTTON      "Center",IDC_BH_BTN_CENTER,689,353,56,14
+    LTEXT           "Status",IDC_BH_TXT_STATUS,7,398,680,14,WS_BORDER
+    LTEXT           "Info",IDC_BH_TXT_INFO,6,416,680,20,WS_BORDER
+    DEFPUSHBUTTON   "Close",IDCANCEL,695,474,55,14
+    PUSHBUTTON      "<<<",IDC_BTN_REVERSE,13,372,45,14
+    EDITTEXT        IDC_EDIT_TOTAL_SRCIMG_SLICES,60,372,45,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CURRENT_VOLUMSNSR_ID,107,372,45,14,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>>",IDC_BTN_FORWARD,154,372,45,14
+    PUSHBUTTON      "Play",IDC_BTN_PLAY_STOP,201,372,45,14
+    PUSHBUTTON      "Open",IDC_BH_BTN_OPEN,658,6,67,14
+    PUSHBUTTON      "Save",IDC_BH_BTN_SAVE,659,23,67,14
+    PUSHBUTTON      "SAM ...",IDC_BH_BTN_META_SAM,695,426,56,14
+    EDITTEXT        IDC_EDIT_META_MODAL_LINK_RESULT,232,443,454,45,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_EDIT_META_MODAL_LINK_PROMPT,3,443,216,45,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Report ...",IDC_BH_BTN_AI_MSI_REPORT,696,442,56,14
+    PUSHBUTTON      "Explain ...",IDC_BH_BTN_AI_EXPLAIN,695,457,56,14
+    LTEXT           "In Progress...",IDC_SPINNER,691,378,58,37,WS_BORDER,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Read Aloud...",IDC_BTN_READ_ALOUD,507,380,50,14
+    PUSHBUTTON      "Stop Reading...",IDC_BTN_STOP_READING,565,380,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_BH_MSI_VIEWER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 760
+        BOTTOMMARGIN, 488
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_BH_MSI_VIEWER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_BRAINHIFIVIEW MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open",                        ID_FILE_OPEN32771
+        MENUITEM "Save",                        ID_FILE_SAVE32772
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Load Images for segmentation", ID_EDIT_LOADIMAGESFORSEGMENTATION
+        MENUITEM "File Image AI Report",        ID_EDIT_FILE
+        MENUITEM "File Image Explanation",      ID_EDIT_FILEIMAGEEXPLANATION
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Refresh",                     ID_VIEW_REFRESH
+    END
+    POPUP "Operation"
+    BEGIN
+        MENUITEM "Check Credential",            ID_OPERATION_CHECKCREDIENTIAL
+        MENUITEM "Fal AI SAM",                  ID_OPERATION_FALAISAM
+        MENUITEM SEPARATOR
+        MENUITEM "Test Meta Model",             ID_OPERATION_TESTMETAMODAL
+        MENUITEM "Test Llama...",               ID_OPERATION_TESTLLAMA
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_BRAINHIFIDELITY     ICON                    "res\\BrainHifi.ico"
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

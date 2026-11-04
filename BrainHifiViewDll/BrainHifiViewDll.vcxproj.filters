@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="core\BhMriVolume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BhMsiViewerApi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\BhSliceRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\BhSourceVolume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgBhMsiViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CFaceBrainHifiView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CFaceBrainHifiViewx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBrainHifiData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMetaSAM3Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBrainHifiLinkMetaModal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBhMsiAiAnalyst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBhSecureKeyStore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMetaLlamaClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\BhLlamaProtocol.cpp">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="core\BhMsiPeakAnalyzer.cpp">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="BhHttps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMetaLlamaAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMetaAiClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\BhMetaAiProtocol.cpp">
+      <Filter>cores</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\BhExport.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\BhMriVolume.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BhMsiViewerApi.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\BhSliceRenderer.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\BhSourceVolume.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceBhMsiViewer.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CFaceBrainHifiViewx.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CFaceBrainHifiView.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBrainHifiData.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMetaSAM3Client.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBrainHifiLinkMetaModal.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBhMsiAiAnalyst.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBhSecureKeyStore.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlgBhMsiViewer.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMetaLlamaClient.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\BhLlamaProtocol.h">
+      <Filter>cores</Filter>
+    </ClInclude>
+    <ClInclude Include="core\BhMsiPeakAnalyzer.h">
+      <Filter>cores</Filter>
+    </ClInclude>
+    <ClInclude Include="BhHttps.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMetaLlamaAPI.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMetaAiClient.h">
+      <Filter>Head Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\BhMetaAiProtocol.h">
+      <Filter>cores</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BrainHifiViewDll.def" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Head Files">
+      <UniqueIdentifier>{01b9ca50-8a42-4371-9450-0e81860aabca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c4fef368-9f5c-4b97-bdd8-aa5adb4a13d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0bca0617-5a60-4a3c-9d3f-f834eaae69a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cores">
+      <UniqueIdentifier>{fd93698a-824c-4d46-8224-004281a24834}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BrainHifiViewDll.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BrainHifi.ico" />
+  </ItemGroup>
+</Project>

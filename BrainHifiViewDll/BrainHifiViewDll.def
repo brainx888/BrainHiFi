@@ -1,0 +1,7 @@
+; BrainHifiViewDll.def : Declares the module parameters for the DLL.
+
+LIBRARY
+
+EXPORTS
+    ; CDlgBhMsiViewer / CBhAnaImport / CBhSrcImport are exported through
+    ; AFX_EXT_CLASS, the core classes and BhShowMsiViewer through BH_API.

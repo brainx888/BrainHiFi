@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>MFCDLLProj</Keyword>
+    <ProjectGuid>{B4A1F0C2-5E37-4D8B-9A61-3C2E7F9D0B15}</ProjectGuid>
+    <RootNamespace>BrainHifiViewDll</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>.\..\..\Debug64\</OutDir>
+    <IntDir>.\..\..\imf\BrainHifiViewDll\Debug64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>.\..\..\Release64\</OutDir>
+    <IntDir>.\..\..\imf\BrainHifiViewDll\Release64\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINDOWS;_DEBUG;_AFXEXT;BRAINHIFI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)core;$(ProjectDir)..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\BrainHifiViewDll.def</ModuleDefinitionFile>
+      <AdditionalDependencies>..\..\Debug64\AnaDataxjDll.lib;..\..\Debug64\CommonAnaDataDllxj.lib;..\..\Debug64\VolumSourceImageDllxj.lib;..\..\Debug64\CommonDIDllxj.lib;..\..\Debug64\CommonUIDll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;_AFXEXT;BRAINHIFI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)core;$(ProjectDir)..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\BrainHifiViewDll.def</ModuleDefinitionFile>
+      <AdditionalDependencies>..\..\Release64\AnaDataxjDll.lib;..\..\Release64\CommonAnaDataDllxj.lib;..\..\Release64\VolumSourceImageDllxj.lib;..\..\Release64\CommonDIDllxj.lib;..\..\Release64\CommonUIDll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BhHttps.cpp" />
+    <ClCompile Include="CBhMsiAiAnalyst.cpp" />
+    <ClCompile Include="CBhSecureKeyStore.cpp" />
+    <ClCompile Include="CBrainHifiData.cpp" />
+    <ClCompile Include="CBrainHifiLinkMetaModal.cpp" />
+    <ClCompile Include="CFaceBrainHifiView.cpp" />
+    <ClCompile Include="CFaceBrainHifiViewx.cpp" />
+    <ClCompile Include="CMetaAiClient.cpp" />
+    <ClCompile Include="CMetaLlamaAPI.cpp" />
+    <ClCompile Include="CMetaLlamaClient.cpp" />
+    <ClCompile Include="CMetaSAM3Client.cpp" />
+    <ClCompile Include="core\BhLlamaProtocol.cpp" />
+    <ClCompile Include="core\BhMetaAiProtocol.cpp" />
+    <ClCompile Include="core\BhMsiPeakAnalyzer.cpp" />
+    <ClCompile Include="CStaticBusySpinnerx.cpp" />
+    <ClCompile Include="CTtsReader.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="BhMsiViewerApi.cpp" />
+    <ClCompile Include="CDlgBhMsiViewer.cpp" />
+    <ClCompile Include="core\BhMriVolume.cpp" />
+    <ClCompile Include="core\BhSourceVolume.cpp" />
+    <ClCompile Include="core\BhSliceRenderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BhHttps.h" />
+    <ClInclude Include="BhMsiViewerApi.h" />
+    <ClInclude Include="CBhMsiAiAnalyst.h" />
+    <ClInclude Include="CBhSecureKeyStore.h" />
+    <ClInclude Include="CBrainHifiData.h" />
+    <ClInclude Include="CBrainHifiLinkMetaModal.h" />
+    <ClInclude Include="CDlgBhMsiViewer.h" />
+    <ClInclude Include="CFaceBrainHifiView.h" />
+    <ClInclude Include="CFaceBrainHifiViewx.h" />
+    <ClInclude Include="CMetaAiClient.h" />
+    <ClInclude Include="CMetaLlamaAPI.h" />
+    <ClInclude Include="CMetaLlamaClient.h" />
+    <ClInclude Include="CMetaSAM3Client.h" />
+    <ClInclude Include="core\BhLlamaProtocol.h" />
+    <ClInclude Include="core\BhMetaAiProtocol.h" />
+    <ClInclude Include="core\BhMsiPeakAnalyzer.h" />
+    <ClInclude Include="CStaticBusySpinnerx.h" />
+    <ClInclude Include="CTtsReader.h" />
+    <ClInclude Include="ResourceBhMsiViewer.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="core\BhExport.h" />
+    <ClInclude Include="core\BhMriVolume.h" />
+    <ClInclude Include="core\BhSourceVolume.h" />
+    <ClInclude Include="core\BhSliceRenderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BrainHifiViewDll.def" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BrainHifiViewDll.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BrainHifi.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
