@@ -190,9 +190,7 @@ CString CallMetaApiFromCpp1(const std::wstring apiKey)
     constexpr std::wstring_view path = L"/v1/responses";
 
     // 2. Authorization Token and JSON Payload matching your working curl/PowerShell request
-    // (In production, you can replace this hardcoded string with GetWinEnvVar(L"MODEL_API_KEY"))
-   
-
+ 
     std::string jsonPayload = R"({
       "model": "muse-wonder-1.0",
       "reasoning": {
