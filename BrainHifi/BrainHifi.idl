@@ -1,0 +1,29 @@
+// BrainHifi.idl : type library source for BrainHifi.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (BrainHifi.tlb).
+
+[ uuid(d2e5db4a-8b6c-46e7-83c4-d5ec1bc10256), version(1.0) ]
+library BrainHifi
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CBrainHifiDoc
+
+	[ uuid(4b608cf6-a6f0-4cea-94dc-bcd0b09208fd) ]
+	dispinterface IBrainHifi
+	{
+		properties:
+
+		methods:
+	};
+
+	//  Class information for CBrainHifiDoc
+
+	[ uuid(d97ef40b-c637-4b43-a6bf-3dc889b3781d) ]
+	coclass BrainHifi
+	{
+		[default] dispinterface IBrainHifi;
+	};
+};

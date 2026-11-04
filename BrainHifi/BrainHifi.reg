@@ -1,0 +1,17 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\BrainHifi.Application = BrainHifi Application
+
+
+HKEY_CLASSES_ROOT\BrainHifi.Application\CLSID = {d97ef40b-c637-4b43-a6bf-3dc889b3781d}
+
+HKEY_CLASSES_ROOT\CLSID\{d97ef40b-c637-4b43-a6bf-3dc889b3781d} = BrainHifi Application
+HKEY_CLASSES_ROOT\CLSID\{d97ef40b-c637-4b43-a6bf-3dc889b3781d}\ProgId = BrainHifi.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{d97ef40b-c637-4b43-a6bf-3dc889b3781d}\LocalServer32 = BrainHifi.EXE
