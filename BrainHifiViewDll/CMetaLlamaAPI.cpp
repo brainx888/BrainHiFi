@@ -183,7 +183,7 @@ extern "C" {
 
 } // extern "C"
 
-CString CallMetaApiFromCpp1()
+CString CallMetaApiFromCpp1(const std::wstring apiKey)
 {
     // 1. API endpoint configuration derived from your PowerShell Uri
     constexpr std::wstring_view server = L"api.meta.ai";
@@ -191,7 +191,7 @@ CString CallMetaApiFromCpp1()
 
     // 2. Authorization Token and JSON Payload matching your working curl/PowerShell request
     // (In production, you can replace this hardcoded string with GetWinEnvVar(L"MODEL_API_KEY"))
-    std::wstring apiKey = L"LLM_1711108750729050_weOrEdaYerP86snI99O1jY529bo";
+   
 
     std::string jsonPayload = R"({
       "model": "muse-wonder-1.0",
